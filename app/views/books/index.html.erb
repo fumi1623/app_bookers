@@ -13,23 +13,19 @@
         <th>Body</th>
       </thead>
 
+      <% @books.each do |book| %>
+
       <tbody>
         <tr>
-          <td>title1</td>
-          <td>body1</td>
-        </tr>
-        <tr>
-          <td>title2</td>
-          <td>body2</td>
-        </tr>
-        <tr>
-          <td>title3</td>
-          <td>title3</td>
+          <td><%= link_to book.title %></td>
+          <td><%= link_to book.body %></td>
         </tr>
       </tbody>
 
+      <% end %>
+
     </table>
-    
+
     <h1>New book</h1>
 
       <%= form_with model: @book, url:'/books', local:true do |f| %>
@@ -39,6 +35,6 @@
         <%= f.text_area :body %>
         <%= f.submit 'Create Book' %>
       <% end %>
-      
+
   </body>
 </html>
