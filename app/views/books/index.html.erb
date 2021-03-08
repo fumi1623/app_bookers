@@ -1,2 +1,44 @@
-<h1>Books#index</h1>
-<p>Find me in app/views/books/index.html.erb</p>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta cherset="utf-8">
+    <link rel="stylesheet" href="../../assets/stylesheets/books.scss">
+    <title>Booker-Index</title>
+  </head>
+  <body>
+    <h1>Books</h1>
+    <table>
+      <thead>
+        <th>Title</th>
+        <th>Body</th>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>title1</td>
+          <td>body1</td>
+        </tr>
+        <tr>
+          <td>title2</td>
+          <td>body2</td>
+        </tr>
+        <tr>
+          <td>title3</td>
+          <td>title3</td>
+        </tr>
+      </tbody>
+
+    </table>
+    
+    <h1>New book</h1>
+
+      <%= form_with model: @book, url:'/books', local:true do |f| %>
+        <h4>title</h4>
+        <%= f.text_field :title %>
+        <h4>body</h4>
+        <%= f.text_area :body %>
+        <%= f.submit 'Create Book' %>
+      <% end %>
+      
+  </body>
+</html>
