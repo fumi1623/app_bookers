@@ -10,5 +10,10 @@
   <%= @book.body %>
 </h3>
 
-<a href="#">編集</a>
-<a href="#">削除</a>
+<p>
+  <%= link_to "edit", edit_book_path(@book) %>
+</p>
+
+<p>
+  <%= link_to "Destroy", book_path(@book), method: :delete %>
+</p>
