@@ -1,19 +1,13 @@
-<h1>
-  <%= link_to "bookers", books_path %>
-</h1>
+<body class="show-page">
+  <p class="show-container"><strong>Title:</strong><%= @book.title %></p>
 
-<h3>
-  <%= @book.title %>
-</h3>
+  <p class="show-container"><strong>Body:</strong><%= @book.body %></p>
 
-<h3>
-  <%= @book.body %>
-</h3>
+  <p>
+    <%= link_to "Edit", edit_book_path(@book) %>
+    |
+    <a href="/books">Back</a>
+  </p>
 
-<p>
-  <%= link_to "edit", edit_book_path(@book) %>
-</p>
 
-<p>
-  <%= link_to "Destroy", book_path(@book), method: :delete %>
-</p>
+</body>

@@ -95,3 +95,24 @@
 .books-create-btn {
   margin-top: 4px;
 }
+
+.show-page {
+  margin: 30px;
+}
+
+.show-container {
+  margin: 30px;
+}
+
+.edit-page {
+  margin: 30px;
+}
+
+.edit-container {
+  margin: 4px;
+}
+
+.edit-update-btn {
+  margin-top: 4px;
+  margin-right: 4px;
+}

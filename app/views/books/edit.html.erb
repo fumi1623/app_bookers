@@ -1,9 +1,26 @@
-<h1>Editing Book</h1>
+<body class="edit-page">
+  <h3>Editing Book</h3>
 
-<%= form_with model: @book, local:true do |f| %>
-  <h4>title</h4>
-  <%= f.text_field :title %>
-  <h4>body</h4>
-  <%= f.text_field :body %>
-  <%= f.submit 'Edit Book' %>
-<% end %>
+  <%= form_with model: @book, local:true do |f| %>
+    <div class="edit-container">
+      <p>title</p>
+      <%= f.text_field :title %>
+    </div>
+
+    <div class="edit-container">
+      <p>body</p>
+      <%= f.text_field :body %>
+    </div>
+
+    <p class="edit-update-btn">
+    <%= f.submit 'Edit Book' %>
+    </p>
+
+    <%= link_to "show", @book %>
+    |
+    <a href="/books">Back</a>
+  <% end %>
+
+
+</body>
+
