@@ -9,3 +9,8 @@ https://026b6c21905540bc9afe33b897b2b693.vfs.cloud9.us-east-1.amazonaws.com/
 
 追記１
 indexページから登録を可能にしました。
+2021/3/8
+
+追記２
+詳細ページを作成しました。
+2021/3/9

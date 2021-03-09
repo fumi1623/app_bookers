@@ -1,2 +1,14 @@
-<h1>Books#show</h1>
-<p>Find me in app/views/books/show.html.erb</p>
+<h1>
+  <%= link_to "bookers", books_path %>
+</h1>
+
+<h3>
+  <%= @book.title %>
+</h3>
+
+<h3>
+  <%= @book.body %>
+</h3>
+
+<a href="#">編集</a>
+<a href="#">削除</a>
