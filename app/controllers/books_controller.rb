@@ -17,8 +17,7 @@ class BooksController < ApplicationController
       flash[:success] = "Book was successfully created."
       redirect_to book_path(book)
     else
-      flash.now[:alert] = "No created"
-      redirect_to books_path
+      render "new"
     end
   end
 
