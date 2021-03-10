@@ -100,6 +100,10 @@
   margin: 30px;
 }
 
+.success-message{
+ color: green;
+}
+
 .show-container {
   margin: 30px;
 }
@@ -114,5 +118,5 @@
 
 .edit-update-btn {
   margin-top: 4px;
-  margin-right: 4px;
+  margin-left: 4px;
 }
