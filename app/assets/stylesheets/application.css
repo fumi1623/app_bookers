@@ -12,4 +12,127 @@
  *
  *= require_tree .
  *= require_self
+
+
  */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-selif;
+}
+
+.header {
+  margin: 50px;
+}
+
+.title {
+  font-family: arial, verdana, sans-serif;
+}
+
+.main {
+  margin: 20px 70px;
+  font-size: 12px;
+}
+
+.top-p {
+  padding: 16px;
+  line-height: 16px;
+}
+
+.top-p:last-child {
+  height: 20px;
+  padding: 0;
+}
+
+.start {
+  margin: 10px;
+  padding: 4px;
+  font-size: 16px;
+  background-color: #8e8eff;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+/*  books  */
+
+.books-body {
+  margin: 30px;
+}
+
+.books-table {
+  table-layout: auto;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.books-thead {
+  text-align: center;
+}
+
+.books-tbody {
+  padding-bottom: 4px;
+  text-align: left;
+}
+
+.books-td {
+  padding-bottom: 2px;
+}
+
+.books-td:not(:last-child) {
+  padding-right: 4px;
+}
+
+.books-table-link {
+  display: inline-block;
+}
+
+.books-new-head {
+  font-size: 24px;
+}
+
+.books-create-btn {
+  margin-top: 4px;
+}
+
+.show-page {
+  margin: 30px;
+}
+
+.flash-message{
+ color: green;
+}
+
+.show-container {
+  margin: 30px;
+}
+
+.edit-page {
+  margin: 30px;
+}
+
+.edit-container {
+  margin: 4px;
+}
+
+.edit-update-btn {
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.error-title {
+  margin-left: 50px;
+  margin-bottom: 20px;
+  color: red;
+}
+
+.error-message {
+  margin-left: 50px;
+  font-size: 1.5em;
+  color: red;
+}
+
+.new-form {
+  margin-left: 50px;
+}
